@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6317B237-D5B6-4C31-BE36-992C70F6F1CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MemoTricks</RootNamespace>
+    <AssemblyName>MemoTricks</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImageClass.cs" />
+    <Compile Include="ImagesToys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImagesToys.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Imagini2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imagini2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LociHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LociHouse.Designer.cs">
+      <DependentUpon>LociHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandomWords.cs" />
+    <Compile Include="MeniuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuPrincipal.Designer.cs">
+      <DependentUpon>MeniuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imagini1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imagini1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SistemulLoci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SistemulLoci.Designer.cs">
+      <DependentUpon>SistemulLoci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SistemulPeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SistemulPeg.Designer.cs">
+      <DependentUpon>SistemulPeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitLoci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitLoci.Designer.cs">
+      <DependentUpon>SubmitLoci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitPeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitPeg.Designer.cs">
+      <DependentUpon>SubmitPeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestLoci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestLoci.Designer.cs">
+      <DependentUpon>TestLoci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestPeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestPeg.Designer.cs">
+      <DependentUpon>TestPeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Texte1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Texte1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ImagesToys.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImagesToys.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagini2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Imagini2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LociHouse.resx">
+      <DependentUpon>LociHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuPrincipal.resx">
+      <DependentUpon>MeniuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagini1.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Imagini1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SistemulLoci.resx">
+      <DependentUpon>SistemulLoci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SistemulPeg.resx">
+      <DependentUpon>SistemulPeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitLoci.resx">
+      <DependentUpon>SubmitLoci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitPeg.resx">
+      <DependentUpon>SubmitPeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestLoci.resx">
+      <DependentUpon>TestLoci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestPeg.resx">
+      <DependentUpon>TestPeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Texte1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Texte1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hat-rack-149247_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 imagine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagini_margine2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagini_margine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baraSus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_6_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 cifra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrows-Back- - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scrisoare_final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagine 5 fara texte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baraSusFaina2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baraSusFaina3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img10_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy_019.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
